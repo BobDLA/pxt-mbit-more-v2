@@ -27,3 +27,8 @@ jobs:
           pxt build --cloud
         env:
           CI: true
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: ./built/binary.hex
