@@ -106,6 +106,7 @@ MbitMoreDevice::MbitMoreDevice(MicroBit &_uBit) : uBit(_uBit) {
 
   // to detect 8G gesture event
   uBit.accelerometer.setRange(8);
+  uBit.accelerometer.setPeriod(5);
 
   displayVersion();
 
